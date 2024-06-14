@@ -56,8 +56,22 @@ public:
 
     void search(string element, Node*& parrent, Node*& currentNode)
     {
-        
+        // This function searches the currentNode of the specified Node as well as the currentNode of its parrent
+        currentNode = ROOT;
+        parrent = NULL;
+        while ((currentNode != NULL) && (currentNode-> info != element))
+        {
+            parrent = currentNode;
+            if (element < currentNode->info)
+                currentNode = currentNode->leftchild;
+            else 
+                currentNode = currentNode->rightchild;
+        }
     }
 
+    void inorder(Node* ptr)
+    {
+
+    }
 
 }

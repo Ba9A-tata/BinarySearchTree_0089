@@ -99,6 +99,22 @@ public:
     }
     void postoerder(Node* ptr)
     {
-        
+        // Perfoms the postorder traversal of the tree
+        {
+        if(ROOT = NULL)
+
+            cout << "Tree is empty" << endl;
+            return;
+        }
+        if(ptr != NULL)
+        {
+            postoerder(ptr->leftchild);
+            postoerder(ptr->rightchild);
+            cout << ptr->info << " ";
+        }
     }
+};
+int main()
+{
+    
 }

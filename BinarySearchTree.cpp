@@ -155,7 +155,9 @@ int main()
             obj.postoerder(obj.ROOT);
             break;
         }
-        
+        case '5':
+            return 0;
+            
         }
         
     }
